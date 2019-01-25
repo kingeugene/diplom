@@ -2644,3 +2644,18 @@ iframe{
     right: 10px;
     top: -10px;
 }
+.t-c {
+text-align: center;
+}
+.wrapper-main {
+height: 100%;
+}
+.conntent-main {
+      box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 380px;
+  padding-top: 100px;
+}
+#footer {
+    height: 406px;
+}
