@@ -2432,7 +2432,7 @@ background: linear-gradient(to right, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 1
     top: 0px;
     width: 100%;
     height: 100%;
-     background: url("../images/imagesbanner.jpg") no-repeat; 
+/*     background: url("../images/imagesbanner.jpg") no-repeat; */
          background-size: 100%;
 }
 .video-background{
@@ -2446,6 +2446,10 @@ background: linear-gradient(to right, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 1
     right: 0;
     height: 100%;
     width: 100%;
+}
+.video-background-container img {
+        width: 100%;
+    height: 143%;
 }
 section{
     position: relative;
@@ -2647,15 +2651,58 @@ iframe{
 .t-c {
 text-align: center;
 }
-.wrapper-main {
-height: 100%;
+
+.wrapper-main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
 .conntent-main {
-      box-sizing: border-box;
-  min-height: 100%;
-  padding-bottom: 380px;
-  padding-top: 100px;
+flex: 1 0 auto;
+    margin-top: 100px;
 }
 #footer {
-    height: 406px;
+
+}
+.task  {
+    display: flex;
+    font-size: 30px;
+    margin: 20px 0;
+}
+#taskFour {
+    display: flex;
+    font-size: 30px;
+    margin: 20px 0;
+}
+#num1, #num2, .plus, .equally, #num1Two, #num2Two, #num1Two2, #num2Two2 {
+    margin: 10px;
+}
+.task #sum, .task #sumTwo, .task #sumTwo2  {
+        width: 76px;
+    text-align: center;
+}
+.task #btnSum, .task #btnSumTwo, .task #btnSumTwo2 {
+    margin: 0 30px;
+}
+.bodyTasc {
+    height: 100%;
+}
+#btnSumThree {
+    display: block;
+}
+#taskFour, #taskFour2, #taskFour3 {
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+
+}
+#btnSumFour, #btnSumFour2, #btnSumFour3 {
+    margin: 0 20px;
+}
+.taskletter-wrap {
+    margin: 0 20px;
+        display: flex;
+    font-size: 30px;
+    margin: 20px 0;
 }

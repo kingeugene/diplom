@@ -38,14 +38,16 @@
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+        <script src="js/tasck.js"></script>
     </head>
 
- <body data-spy="scroll" data-target=".navbar-fixed-top">
+ <body data-spy="scroll" data-target=".navbar-fixed-top" class="bodyTasc">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 <div class="wrapper-main">
+
     <header id="header" class="navbar-fixed-top navbar-inverse video-menu" role="banner">
         <div class="container container-header">
             <!-- <div class="row"> -->
@@ -72,18 +74,83 @@
                      </nav>
                 </div><!-- /.container-fluid -->
 </header>
- <div class="conntent-main">
+    <div class="conntent-main">  
          <section id="banner">
         <div class="container">
             <h1 class="t-c">Математика</h1>
             <h3 class="t-c">Подивіться навчальні відео</h3>
 
-            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ZenVpFWYy9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="600px" src="https://www.youtube.com/embed/ZenVpFWYy9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h2 class="t-c">Завдання</h2>
-            <div class="tasck">
-                <h5>Сколько будет</h5>
-            <div class="tasck">
-                <div id="num1">2</div><div>+</div><div id="num2">1</div><div>=</div><input id="sum" type="text">
+                     <h3>Cкільки буде</h3>
+            <div class="task">
+                <div id="num1">2</div><div class="plus">+</div><div id="num2">1</div><div class="equally">=</div><input id="sum" type="text">
+                 <input id="btnSum" type="button" value="Відповісти" />
+            </div>
+
+            <div class="task">
+                <div id="num1Two">4</div><div class="plus">-</div><div id="num2Two">1</div><div class="equally">=</div><input id="sumTwo" type="text">
+                 <input id="btnSumTwo" type="button" value="Відповісти" />
+            </div>
+	       <div class="task">
+                <div id="num1Two2">2</div><div class="plus">-</div><div id="num2Two2">1</div><div class="equally">=</div><input id="sumTwo2" type="text">
+                 <input id="btnSumTwo2" type="button" value="Відповісти" />
+            </div>
+            <h1 class="t-c">Читання</h1>
+            <h3 class="t-c">Казка</h3>
+            <div class="textFairy">
+                    <p>Видоїла жінка корову та чогось у хату заквапилась, дійницю посеред подвір'я залишила. Прилетіла сорока й ну молоко пити. Виглянула жінка з хати, побачила сороку, підкралася нечутно й хап її за хвоста. Сорока вирвалась, а хвіст так і залишився в руках у жінки.</p>
+                    <p>- Хазяйко, хазяйко, віддай мені хвоста!-благає сорока.</p>
+                    <p>А жінка не віддає.</p>
+                    <p>- Поверни, каже те молоко, що випила, тоді й хвоса та віддам.</p>
+                    <p>Пішла сорока до корови молока просити, а корова не дає.</p>
+                    <p>- ПІринеси, каже, мені трави, тоді й молоко буде.</p>
+                    <p>Полетіла сорока на луки трави просити, а луки не дають:</p>
+                    <p>- Дай, кажуть, нам води, тоді й трава наросте.</p>
+                    <p>Полетіла сорока до водовоза води прохати, а водовоз не дає:</p>
+                    <p>- Принеси, каже, мені яєчко, тоді й воду матимеш.</p>
+                    <p>Полетіла сорока до курочки яєчко просити. Пожаліла курочка сороку й дала їй яєчко.</p>
+                    <p>Взяла сорока яєчко й віддала водовозу, а водовоз їй води дав. Принесла сорока воду лукам, а луки дали сороці трави. Віддала сорока корові траву, а корова сороці - молоко. Повернула сорока молоко хазяйці, а хазяйка їй хвоста. Приладнала сорока собі хвоста й полетіла в ліс до своїх батьків.</p>
+
+            </div>
+            <h4>Питання</h4>
+            <div class="taskFiry">
+                <p>Навіщо прилетіла сорока?</p>
+                <input type="radio" id="firy1" value="Пити молоко" >Пити молоко<br>
+                <input type="radio" id="firy2" value="Подивитися на жінку" >Подивитися на жінку<br>
+                <input type="radio" id="firy3" value="Вкрасти їжу"> Вкрасти їжу
+                <input  id="btnSumThree" type="button" value="Відповісти" />
+                <br>
+                <p>Що жінка не ввідавала Сороки</p>
+                 <input type="radio" id="firy12" value="Молоко" >Молоко<br>
+                <input type="radio" id="firy22" value="Хвост" >Хвост<br>
+                <input type="radio" id="firy32" value="Лук">Лук
+                <input  id="btnSumThree" type="button" value="Відповісти" />
+                <br>
+                <p>Що водовоз просив у Сороки</p>
+                <input type="radio" id="firy13" value="Хліб" >Молоко<br>
+                <input type="radio" id="firy23" value="Яєчко" >Яєчко<br>
+                <input type="radio" id="firy33" value="Траву">Траву
+                <input  id="btnSumThree" type="button" value="Відповісти" />
+                <br>
+
+            </div>
+            <h1 class="t-c">Письмо</h1>
+            <div class="taskletter">
+                <h4>Питання</h4>
+                <p>Вставте пропущену літеру</p>
+                <div class="taskletter-wrap">
+                <div style="display: flex;align-items: center;">Сор <input type="text" id="taskFour">ка</div>
+                <input  id="btnSumFour" type="button" value="Відповісти" />
+                </div>
+                <div class="taskletter-wrap">
+                <div>тр<input type="text" id="taskFour2">ва</div>
+                <input  id="btnSumFour2" type="button" value="Відповісти" />
+                </div>
+                <div class="taskletter-wrap">
+                <div>бат<input type="text" id="taskFour3">ки</div>
+                <input  id="btnSumFour3" type="button" value="Відповісти" />
+                </div>
             </div>
         </div>
     </section>
@@ -179,7 +246,7 @@
     </div>
 </section>
 <!-- Footer Area End -->
-</div>
+
 
 
 <!-- Back To Top Button -->
@@ -188,7 +255,7 @@
     </section>
     <!-- End Back To Top Button -->
 
-
+</div>
 
 <!-- Javascript Files
     ================================================== -->
@@ -198,9 +265,8 @@
 		<script type="text/javascript" src="js/jquery2.js"></script>
         <!-- Bootstrap jQuery -->
          <script src="js/bootstrap.min.js"></script>
-        <!-- Owl Carousel -->
-        <script src="js/owl.carousel.js"></script>
-         <script src="js/owl.carousel.min.js"></script>
+
+
 
         <!-- Isotope -->
         <script src="js/jquery.isotope.js"></script>
@@ -219,15 +285,9 @@
       	<!-- Wow Animation -->
         <script type="js/javascript" src="js/wow.min.js"></script>
         <!-- Google Map  Source -->
-        <script type="text/javascript" src="js/gmaps.js"></script>
 			<!-- Custom js -->
         <script src="js/custom.js"></script>
-	   <script>
-              $('#portfolio-slider').bxSlider({
-                mode: 'fade',
-                autoControls: false
-              });
-        </script>
+
       
     </body>
 </html>
